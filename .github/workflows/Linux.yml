@@ -35,7 +35,7 @@ jobs:
     - name: build
       run: |
         cmake -B build ${{ matrix.config.options }} -DCMAKE_INSTALL_PREFIX=~/install
-        make -j2 VERBOSE=1
+        cmake --build build --parallel 2 --verbose
     
     - name: test
       run: |
