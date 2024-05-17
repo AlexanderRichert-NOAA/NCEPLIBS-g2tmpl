@@ -32,7 +32,7 @@ jobs:
     - name: build
       run: |
         cmake -B build
-        cmake --build g2tmpl/build --parallel 2 --verbose
+        cmake --build build --parallel 2 --verbose
     
     - name: test
       run: |
